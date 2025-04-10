@@ -22,3 +22,7 @@ header{
 main{
     margin-inline: 20%;
 }
+
+img{
+    height: 200px;
+}
