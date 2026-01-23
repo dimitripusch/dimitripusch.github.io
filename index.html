@@ -1,134 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimitri Barcelos Pusch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
       }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1>Portfólio 2°J</h1>
-        <p>Colégio Estadual do Paraná</p>
-      </div>
-    </header>
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
 
-    <main>
-      <section id="membros">
-        <div class="container">
-          <h2>Nossa Equipe</h2>
-          <div class="membro">
-            <div class="foto-perfil">
-              <img src="foto_membro1.jpg" alt="Foto do Membro 1" />
-            </div>
-            <div class="info-membro">
-              <h3>Dimitri B. Pusch</h3>
-              <p class="instagram">
-                <a
-                  href="https://www.instagram.com/demetrius.pusch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >@demetrius.pusch</a
-                >
-              </p>
-              <p class="email">dimitri.pusch@escola.pr.gov.br</p>
-              <div class="skills">
-                <span class="pill">Física</span>
-                <span class="pill">Línguas</span>
-                <span class="pill">Punhobol</span>
-              </div>
-              <p class="curriculo">
-                <a
-                  href="curriculos/dimtiri.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Currículo</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div class="membro">
-            <div class="foto-perfil">
-              <img src="foto_membro2.jpg" alt="Foto do Membro 2" />
-            </div>
-            <div class="info-membro">
-              <h3>Sophia F. Pirani</h3>
-              <p class="instagram">
-                <a
-                  href="https://www.instagram.com/sophiafreipi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >@sophiafreipi</a
-                >
-              </p>
-              <p class="email">sophia.pirani@escola.pr.gov.br</p>
-              <div class="skills">
-                <span class="pill">Hab. 1</span>
-                <span class="pill">Hab. 2</span>
-                <span class="pill">Hab. 3</span>
-              </div>
-              <p class="curriculo">
-                <a
-                  href="curriculos/sophia.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Currículo</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div class="membro">
-            <div class="foto-perfil">
-              <img src="foto_membro3.jpg" alt="Foto do Membro 3" />
-            </div>
-            <div class="info-membro">
-              <h3>Felipe O. Moraes</h3>
-              <p class="instagram">
-                <a
-                  href="https://www.instagram.com/@2j.cep"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >@2j.cep</a
-                >
-              </p>
-              <p class="email">oliveira.moraes.felipe@escola.pr.gov.br</p>
-              <div class="skills">
-                <span class="pill">Hab. 1</span>
-                <span class="pill">Hab. 2</span>
-                <span class="pill">Hab. 3</span>
-              </div>
-              <p class="curriculo">
-                <a
-                  href="curriculos/felipe.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Currículo</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>Colégio Estadual do Paraná, 2°J</p>
-      </div>
-    </footer>
-  </body>
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+</head>
+<body>
+  <md-tabs>
+  <md-primary-tab>Video</md-primary-tab>
+  <md-primary-tab>Photos</md-primary-tab>
+  <md-primary-tab>Audio</md-primary-tab>
+</md-tabs>
+</body>
 </html>
