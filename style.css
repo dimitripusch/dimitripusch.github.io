@@ -1,274 +1,102 @@
-body {
-  font-family: "Inter", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+:root {
+  --primary: #318a59;
+  --secondary: #ee5315 ;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: "Google Sans Flex", Arial, sans-serif;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+h2{
+  font-size: 3rem;
 }
 
-header {
-  background-color: #343a40;
-  color: #fff;
-  padding: 25px 0;
-  text-align: center;
+/* Estrutura geral */
+body {
+  background-color: var(--white);
 }
 
-header h1 {
-  margin-bottom: 10px;
-  font-size: 2.2em;
-  font-weight: 600;
+/* Cada seção */
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: clamp(40px, 6vw, 100px) clamp(20px, 8vw, 140px);
 }
 
-header p {
-  font-size: 1.1em;
-  color: #ddd;
+/* Alternância de cores */
+.section.primary {
+  background-color: var(--primary);
+  color: var(--white);
 }
 
-main {
-  padding: 30px 0;
-  min-height: calc(100vh - 140px);
+.section.white {
+  background-color: var(--white);
+  color: var(--black);
 }
 
-#membros {
-  padding-bottom: 40px;
-}
-
-#membros h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5em;
-  color: #2c3e50;
-  font-weight: 700;
-}
-
-.membro {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin-bottom: 30px;
+/* Conteúdo interno */
+.content {
+  width: 100%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+/* Centralização especial da primeira sessão */
+.content.center {
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.membro:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.foto-perfil {
+/* Foto */
+.content img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.foto-perfil img {
-  width: 100%;
-  height: 100%;
+  border: 5px solid var(--white);
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
 }
 
-.foto-perfil:hover img {
-  transform: scale(1.1);
-}
-
-.info-membro {
-  width: 100%;
-}
-
-.info-membro h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.8em;
-  color: #2c3e50;
-  font-weight: 600;
-}
-
-.info-membro p {
-  margin-bottom: 12px;
-  font-size: 1.1em;
-  color: #555;
-}
-
-.info-membro .instagram a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease-in-out;
-}
-
-.info-membro .instagram a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-.info-membro .email {
-  color: #555;
-  font-size: 1.1em;
-}
-
-.skills {
-  margin-bottom: 20px;
+/* Contato */
+.contact {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.pill {
-  display: inline-block;
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 25px;
-  margin: 5px 10px;
-  font-size: 0.95em;
-  font-weight: 500;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+.contact p {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.contact a{
+    color: var(--white);
+    text-decoration: 2px underline var(--secondary);
+}
+.content i{
+    font-size: 22px;
 }
 
-.pill:hover {
-  background-color: #2980b9;
-  transform: scale(1.1);
-}
-
-.info-membro .curriculo a {
-  display: inline-block;
-  background-color: #28a745;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  font-size: 1.1em;
+/* Blocos */
+.block {
   margin-top: 10px;
 }
 
-.info-membro .curriculo a:hover {
-  background-color: #218838;
-  transform: scale(1.05);
+/* Listas */
+ul {
+  margin-left: 20px;
 }
 
-footer {
-  background-color: #2c3e50;
-  color: #fff;
-  text-align: center;
-  padding: 25px 0;
-  margin-top: 40px;
-}
-
-footer p {
-  font-size: 1em;
-  color: #eee;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  header h1 {
-    font-size: 1.8em;
-  }
-
-  header p {
-    font-size: 1em;
-  }
-
-  #membros h2 {
-    font-size: 2em;
-  }
-
-  .membro {
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 20px;
-  }
-
-  .foto-perfil {
-    width: 150px;
-    height: 150px;
-  }
-
-  .info-membro h3 {
-    font-size: 1.5em;
-  }
-
-  .info-membro p {
-    font-size: 1em;
-  }
-
-  .skills {
-    justify-content: center;
-  }
-
-  .pill {
-    font-size: 0.9em;
-    padding: 8px 15px;
-    margin: 5px;
-  }
-
-  .info-membro .curriculo a {
-    font-size: 1em;
-    padding: 10px 20px;
-  }
-
-  footer {
-    padding: 20px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.6em;
-  }
-
-  header p {
-    font-size: 0.9em;
-  }
-
-  #membros h2 {
-    font-size: 1.75em;
-  }
-
-  .membro {
-    padding: 15px;
-  }
-
-  .foto-perfil {
-    width: 120px;
-    height: 120px;
-  }
-
-  .info-membro h3 {
-    font-size: 1.2em;
-  }
-
-  .info-membro p {
-    font-size: 0.9em;
-  }
-
-  .pill {
-    font-size: 0.8em;
-    padding: 6px 12px;
-  }
-
-  .info-membro .curriculo a {
-    font-size: 0.9em;
-    padding: 10px 18px;
-  }
+ul li::marker {
+  color: var(--secondary);
 }
