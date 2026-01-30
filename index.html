@@ -1,29 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dimitri Barcelos Pusch</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <script type="importmap">
-    {
-      "imports": {
-        "@material/web/": "https://esm.run/@material/web/"
-      }
-    }
-  </script>
-  <script type="module">
-    import '@material/web/all.js';
-    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimitri B. Pusch | Portfólio Acadêmico</title>
 
-    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
-  </script>
-</head>
-<body>
-  <md-tabs>
-  <md-primary-tab>Video</md-primary-tab>
-  <md-primary-tab>Photos</md-primary-tab>
-  <md-primary-tab>Audio</md-primary-tab>
-</md-tabs>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+  </head>
+  <body>
+    <section class="section primary">
+      <div class="content center">
+        <img src="photo.jpg" alt="Dimitri B. Pusch" />
+        <h1>Dimitri B. Pusch</h1>
+        <p>
+          Pesquisador de Iniciação Científica (Física/Astronomia) e
+          Desenvolvedor
+        </p>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="content">
+        <h2>Sobre</h2>
+        <p>
+          Estudante do 3º ano do Ensino Médio no Colégio Estadual do Paraná, com
+          trajetória voltada à investigação científica em Física e Astronomia.
+          Atualmente, desenvolvo pesquisa em ocultação astronômica como bolsista
+          pela UTFPR. Possuo formação técnica em desenvolvimento de software
+          (Python, React.js) e sólida atuação em liderança institucional e no
+          Movimento Escoteiro.
+        </p>
+      </div>
+    </section>
+
+    <section class="section primary">
+      <div class="content">
+        <h2>Contato</h2>
+        <div class="contact">
+          <p>
+            <i class="ph ph-envelope"></i>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:pusch.dimitri@gmail.com"
+              >pusch.dimitri@gmail.com</a
+            >
+          </p>
+          <p>
+            <i class="ph ph-instagram-logo"></i>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/dimitri.pusch/"
+              >@dimitri.pusch</a
+            >
+          </p>
+          <p>
+            <i class="ph ph-linkedin-logo"></i
+            ><a
+              href="https://www.linkedin.com/in/dimitri-barcelos-pusch-32335a274/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dimitri Barcelos Pusch</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="content">
+        <h2>Experiência Acadêmica e Institucional</h2>
+
+        <div class="block">
+          <b>
+            <p>Iniciação Científica – Departamento de Física</p>
+            <p>UTFPR & OACEP | Outubro 2024 – Presente</p>
+          </b>
+          <ul>
+            <li>
+              Pesquisa em Ocultação Astronômica sob orientação do Prof. Dr.
+              Felipe Braga Ribas e Prof. Dr. Amauri José da Luz Pereira.
+            </li>
+            <li>Coleta, redução e análise de dados fotométricos.</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <b>
+            <p>Conselho Fiscal do Grêmio Estudantil</p>
+            <p>Colégio Estadual do Paraná | Julho – Novembro</p>
+          </b>
+          <ul>
+            <li>
+              Responsável pela auditoria e supervisão financeira da entidade
+              estudantil.
+            </li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <b>
+            <p>Clube de Ciências Espaciais (Equipo Longe Lateqve)</p>
+            <p>OACEP</p>
+          </b>
+          <ul>
+            <li>
+              Organizador de equipes na Campanha de Caça de Asteroides
+              (IASC/NASA).
+            </li>
+            <li>Realização de 30 detecções preliminares identificadas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section primary">
+      <div class="content">
+        <h2>Formação</h2>
+        <div class="block">
+          <b>
+            <p>Ensino Médio: Colégio Estadual do Paraná (Prev. 2026)</p>
+          </b>
+        </div>
+        <div class="block">
+          <b>
+            <p>Desenvolvimento de Sistemas: BYJU'S Future School</p>
+          </b>
+          <ul>
+            <li>Engenharia de Front-end (React.js, HTML5, CSS3).</li>
+            <li>Ciência de Dados e Inteligência Artificial (Python).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="content">
+        <h2>Prêmios e Certificados</h2>
+        <ul>
+          <li>
+            <strong>UEB:</strong> Insígnia de Modalidade Aeronauta, Insígnia de
+            Modalidade Aviador, Especialidade Nível 3 de Web Design,
+            Programação, Astronáutica e Mecânica Aérea.
+          </li>
+          <li>
+            <strong>OBAFOG 2025:</strong> Medalha de Ouro nacional em lançamento
+            de foguetes.
+          </li>
+          <li>
+            <strong>Agência Espacial Brasileira (AEB):</strong> Nanossatélites e
+            Física de Foguetes.
+          </li>
+          <li>
+            <strong>OACEP:</strong> Curso de Operação de Planetário Básico.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section primary">
+      <div class="content">
+        <h2>Idiomas</h2>
+        <ul>
+          <li><strong>Português:</strong> Nativo.</li>
+          <li><strong>Inglês:</strong> Nível B2 (Intermediário-Avançado).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="content">
+        <h2>Competências</h2>
+        <ul>
+          <li>
+            <strong>Técnicas:</strong> Python, React.js, SQL, Fotometria,
+            Metodologia Científica.
+          </li>
+          <li>
+            <strong>Liderança:</strong> Gestão de equipes, fiscalização
+            administrativa e mediação.
+          </li>
+          <li>
+            <strong>Operacionais:</strong> Operação de telescópios e sistemas de
+            projeção planetária.
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
 </html>
